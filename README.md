@@ -1,7 +1,7 @@
 # Authenticator SDK for Android
 
-[![Bintray](https://img.shields.io/bintray/v/cmdisp/com.cmdisp.authenticator/authenticator-sdk.svg)](https://bintray.com/com.cmdisp.authenticator/authenticator-sdk/_latestVersion)
-[![license](https://img.shields.io/github/license/cmdisp/authenticator-sdk-android.svg)](cmdisp/authenticator-sdk-android)
+[![Bintray](https://img.shields.io/bintray/v/cmdisp/authenticator/authenticator-sdk.svg)](https://bintray.com/cmdisp/authenticator/authenticator-sdk/_latestVersion)
+[![license](https://img.shields.io/github/license/cmdisp/authenticator-sdk-android.svg)](https://github.com/cmdisp/authenticator-sdk-android)
 
 
 SDK guide for Android developers
@@ -50,7 +50,7 @@ Regularly check if the registration is still valid and prompt to re-register if 
 4. Retrieve the info from the scanned QR code
 5. [Register the environment](#register-environment-1)
 
-###Authentication requests
+### Authentication requests
 
 1. Obtain authentication request
   - [From push message](#get-authentication-request-1) (basic)
