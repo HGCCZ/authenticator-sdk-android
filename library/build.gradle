@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName '1.0.0'
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+ext {
+    okHttpVersion = '3.9.0'
+}
+
+dependencies {
+    implementation "com.android.support:support-annotations:$rootProject.supportLibraryVersion"
+    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+}
+
+ext {
+    PUBLISH_GROUP_ID = 'com.cmdisp.authenticator'
+    PUBLISH_ARTIFACT_ID = 'authenticator-sdk'
+    PUBLISH_VERSION = '1.0.0'
+}
+
+apply from: 'android-release-aar.gradle'

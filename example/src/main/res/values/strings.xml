@@ -1,0 +1,64 @@
+<!--
+  Copyright (c) 2017 CM Telecom B.V.
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+  -->
+
+<resources>
+    <string name="app_name">Authenticator SDK Example</string>
+    <string name="approve">Approve</string>
+    <string name="deny">Deny</string>
+    <string name="error">An error occurred</string>
+    <string name="unknown">Unknown</string>
+
+    <string name="phone_number">Phone number</string>
+    <string name="phone_number_placeholder">+31612345678</string>
+    <string name="phone_number_next">Next</string>
+    <string name="phone_number_invalid">Invalid phone number</string>
+    <string name="phone_number_failed">Registering phone number failed</string>
+
+    <string name="verification_code">Verification code</string>
+    <string name="verification_code_verify">Verify</string>
+    <string name="verification_code_failed">Failed to verify verification code</string>
+    <string name="verification_code_invalid">Verification code is invalid</string>
+
+    <string name="authentication_none">No open requests</string>
+    <string name="authentication_title">Authentication request</string>
+    <string name="authentication_date">Date</string>
+    <string name="authentication_location">IP &amp; Location</string>
+    <string name="authentication_time_remaining">Time remaining</string>
+    <string name="authentication_seconds_left">%d seconds</string>
+    <string name="authentication_otp">One time password</string>
+
+    <string name="scanner_qr">Scan QR code</string>
+    <string name="scanner_permission_title">Camera permission</string>
+    <string name="scanner_permission_rationale">Permission to the camera is required to scan QR codes</string>
+    <string name="scanner_code_invalid">Invalid QR code</string>
+
+    <string name="notification_qr">Open the app to scan the QR code</string>
+    <string name="notification_auth">Authentication request</string>
+
+    <string name="auth_success_approved">Authentication request approved</string>
+    <string name="auth_success_denied">Authentication request denied</string>
+    <string name="auth_error_expired">Authentication request expired</string>
+    <string name="auth_error_failed">Authentication request failed, check your connection</string>
+
+    <string name="play_services_error">Google Play Services is not available</string>
+    <string name="unregister_environment">Unregister environment</string>
+</resources>

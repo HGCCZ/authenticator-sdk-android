@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2017 CM Telecom B.V.
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmdisp.authenticator.example.activities.MainActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_view_auth_req_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/margin"
+        android:drawableTop="@drawable/shield"
+        android:text="@string/authentication_none"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/layout_auth_req_information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AppTheme.InfoItem.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:id="@+id/text_view_phone_number"
+                style="@style/AppTheme.InfoItem.Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/phone_number_placeholder" />
+
+            <TextView
+                style="@style/AppTheme.InfoItem.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/authentication_date" />
+
+            <TextView
+                android:id="@+id/text_view_date"
+                style="@style/AppTheme.InfoItem.Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="25 jul 2017 11:10:29" />
+
+            <TextView
+                style="@style/AppTheme.InfoItem.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/authentication_location" />
+
+            <TextView
+                android:id="@+id/text_view_ip"
+                style="@style/AppTheme.InfoItem.Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                tools:text="198.51.100.24" />
+
+            <TextView
+                android:id="@+id/text_view_location"
+                style="@style/AppTheme.InfoItem.Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Breda, Netherlands" />
+
+            <TextView
+                style="@style/AppTheme.InfoItem.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/authentication_time_remaining" />
+
+            <TextView
+                android:id="@+id/text_view_timer"
+                style="@style/AppTheme.InfoItem.Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="12 seconds" />
+
+            <TextView
+                android:id="@+id/text_view_otp_title"
+                style="@style/AppTheme.InfoItem.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/authentication_otp" />
+
+            <TextView
+                android:id="@+id/text_view_otp"
+                style="@style/AppTheme.InfoItem.Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                tools:text="123465" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_auth_req_instant"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:baselineAligned="false">
+
+            <ImageButton
+                android:id="@+id/button_authentication_deny"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_red"
+                android:contentDescription="@string/deny"
+                android:scaleType="center"
+                android:src="@drawable/close_large" />
+
+            <ImageButton
+                android:id="@+id/button_authentication_approve"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_green"
+                android:contentDescription="@string/approve"
+                android:scaleType="center"
+                android:src="@drawable/check_large" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
