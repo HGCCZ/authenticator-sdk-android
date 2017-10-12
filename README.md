@@ -1,6 +1,6 @@
 # Authenticator SDK for Android
 
-[![Bintray](https://img.shields.io/bintray/v/cmdisp/authenticator/authenticator-sdk.svg)](https://bintray.com/cmdisp/authenticator/authenticator-sdk/_latestVersion)
+[![Download](https://api.bintray.com/packages/cmdisp/authenticator/authenticator-sdk/images/download.svg)](https://bintray.com/cmdisp/authenticator/authenticator-sdk/_latestVersion)
 [![license](https://img.shields.io/github/license/cmdisp/authenticator-sdk-android.svg)](https://github.com/cmdisp/authenticator-sdk-android)
 
 
